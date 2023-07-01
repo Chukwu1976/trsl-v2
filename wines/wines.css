@@ -1,0 +1,73 @@
+h1 {
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3.5rem;
+}
+.mt {
+  margin-top: 10%;
+}
+p {
+  line-height: 2rem;
+}
+.classification hr {
+  border: 1px solid #b0976d;
+  width: 90%;
+}
+.classification {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+}
+.testNote {
+  padding: 14% 3% 5% 6%;
+}
+.testNote h2 {
+  font-size: 2.2rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10%;
+}
+.testNote span {
+  font-weight: bold;
+}
+h6 {
+  font-weight: bold;
+}
+h6 + p {
+  line-height: 3.7rem;
+}
+.mayLike {
+  text-align: center;
+  margin: 20% 0;
+}
+.mayLike > h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10%;
+}
+.mayLike p {
+  margin-top: 1.7rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.mayLike a {
+  text-decoration: none;
+  color: #000000;
+}
+.tran {
+  transition: 0.8s;
+}
+.tran:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .tran {
+    transition: none;
+  }
+  .tran:hover {
+    transform: none;
+    z-index: 0;
+  }
+}

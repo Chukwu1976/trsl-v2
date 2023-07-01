@@ -1,0 +1,382 @@
+html {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+}
+section {
+  margin-bottom: 0px;
+  padding-bottom: 60px;
+}
+.navbar-nav > a.active {
+  transition: none;
+}
+.navbar-nav > a:not( a.active)::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+.navbar-nav > a:not(a.active):hover::after {
+  width: 100%;
+}
+.bgWine {
+  background-image: linear-gradient(to right, #000428 , #004e92);
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  height: 112vh;
+}
+.bgWine h2{
+  color: #FFFFCC;
+  padding-top: 12%;
+  padding-left: 10%;
+  width: 60vw;
+  font-size: 3.1rem;
+  margin-bottom: 25px;
+}
+.bgWine p{
+  color: #CCCCCC;
+  padding-left: 10%;
+  width: 60vw;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .bgWine {
+    height: 110vh;
+  }
+  .bgWine h2 {
+    width: 100vw;
+    font-size: 3rem;
+  }
+  .bgWine p {
+    width: 90vw;
+    font-size: 1.2rem;
+  }
+  /* .bgWine img {
+    display: none;
+  } */
+  .wineRow .col-8, .col-4{
+    width: 100%;
+  }
+
+  /* Footer */
+  
+  footer h3 {
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+  }
+  footer p {
+    line-height: 20px;
+    font-size: 1.1rem;
+  }
+  
+}
+
+.bgWine a{
+  margin-left: 10%;
+  transition: .5s ease;
+  position: relative;
+}
+
+.bgWine img{
+  float: right;
+  margin-top: -31%;
+  margin-right: 5%;
+  width: 400px;
+  height: auto;
+}
+
+
+
+.bSection{
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+h2.card-title {
+  color: #00008b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 10px;
+}
+p.card-text {
+  color: #131313;
+  font-size: 20px;
+}
+.canteleIntro h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: underline 4px solid #c1121f;
+}
+.canteleIntro + p {
+  color: #131313;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.wineRow {
+  margin-bottom: 50px;
+  padding-top: 40px;
+}
+/* White Wine Section */
+.whiteWineText {
+  border-left: 4px solid #cccccc;
+  color: #131313;
+  margin-bottom: 100px;
+}
+.wineImg {
+  margin-top: 20px;
+}
+.hrWhite {
+  /* color: #d6ab60; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 40px;
+}
+.hrWhite a {
+  color: #131313;
+  text-decoration: none;
+}
+.hrWhite a:hover {
+  color: #b0976d;
+}
+
+.hrWhite::before,
+.hrWhite::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #b0976d;
+}
+
+.hrWhite:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.hrWhite:not(:empty)::after {
+  margin-left: 0.25em;
+}
+.iconWhite {
+  color: #d6ab60;
+  font-size: 35px;
+}
+/* Rose Wine Section */
+.roseWineText {
+  border-right: 4px solid #e2684d;
+  color: #131313;
+  margin-bottom: 100px;
+  text-align: right;
+}
+.iconRose {
+  color: #e2684d;
+  font-size: 35px;
+}
+.hrRose {
+  /* color: #d6ab60; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 40px;
+}
+.hrRose a {
+  color: #131313;
+  text-decoration: none;
+}
+.hrRose a:hover {
+  color: #e2684d;
+}
+
+.hrRose::before,
+.hrRose::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #e2684d;
+}
+
+.hrRose:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.hrRose:not(:empty)::after {
+  margin-left: 0.25em;
+}
+/* Red Wine Section */
+.redWineText {
+  border-left: 4px solid #c1121f;
+  color: #131313;
+  margin-bottom: 100px;
+}
+.iconRed {
+  color: #c1121f;
+  font-size: 35px;
+}
+.hrRed {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 40px;
+}
+.hrRed a {
+  color: #131313;
+  text-decoration: none;
+}
+.hrRed a:hover {
+  color: #c1121f;
+}
+
+.hrRed::before,
+.hrRed::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #c1121f;
+}
+
+.hrRed:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.hrRed:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+/* Our team */
+.team {
+  margin-top: 100px;
+}
+.team h3 {
+  font-size: 40px;
+}
+h3 > span {
+  color: #00008b;
+}
+.team .row {
+  /* background: #c1121f; */
+  margin-top: 70px;
+}
+
+
+
+/* Footer section */
+footer {
+  background-image: linear-gradient(to right, #000428 , #004e92);
+  height: 100%;
+  padding-top: 40px;
+}
+footer h3 {
+  color: #f8ff34;
+  font-size: 38px;
+  font-family: "Lato", sans-serif;
+}
+footer p {
+  color: #feffde;
+  line-height: 20px;
+}
+.contactIcon {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.fbIcon {
+  color: #1877f2;
+  text-decoration: none;
+}
+.twIcon {
+  color: #00acee;
+  text-decoration: none;
+}
+.igIcon {
+  color: #e4405f;
+  text-decoration: none;
+}
+.ytIcon {
+  color: #c4302b;
+  text-decoration: none;
+}
+footer h4 {
+  color: #f8ff34;
+}
+/* style="height: 3px; color: #f8ff34; background-color: #f8ff34" */
+footer hr {
+  height: 7px;
+  color: #f8ff34;
+  background-color: #f8ff34"
+}
+
+@media only screen and (max-width: 600px) {
+  .bgWine {
+    height: 120vh;
+  }
+  .bgWine h2{
+    padding-top: 20%;
+    width: 90vw;
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+  .bgWine p{
+    width: 90vw;
+    font-size: 1rem;
+  }
+  .bgWine img{
+    margin-top: 0.5%;
+    padding-bottom: 8%;
+  }
+  .wineRow .col-8, .col-4{
+    width: 100%;
+  }
+  
+  /* Footer */
+  footer {
+    height: 100%;
+    /* padding-top: 10px; */
+  }
+  footer h3 {
+    font-size: 1.7rem;
+    font-family: "Lato", sans-serif;
+  }
+  footer p {
+    line-height: 20px;
+    font-size: 0.9rem;
+  }
+  
+}
+
+
+
+.privacy{
+  text-decoration: none;
+  color: #ffff;
+  padding-top: 30px;
+}
+.privacy:hover{
+  color: #f8ff34;
+}
+section:last-child{
+  padding-bottom: 0px;
+}
+section:last-child .copyRight{
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+}
+
+/* .copyRight{
+  
+
+} */
+
+
+
+
+/* .openSans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.lato {
+  font-family: "Lato";
+} */
+

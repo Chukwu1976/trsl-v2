@@ -1,0 +1,22 @@
+section:first-child {
+  margin-bottom: 80px;
+}
+h1 {
+  color: #1f1e1e;
+  font-size: 3.1rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3%;
+}
+h4 {
+  color: #1f1e1e;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 1.1rem;
+  color: #2b2b2b;
+  line-height: 2rem;
+}
+.container:nth-child(2) {
+  margin-bottom: 12%;
+}
